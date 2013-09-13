@@ -38,6 +38,12 @@ dependency, e.g.::
     <repository name="package_biopython_1_61" owner="biopython" />
   </repositories>
 
+Also, in your tool XML file(s) you must include::
+
+  <requirements>
+    <requirement type="package" version="1.61">biopython</requirement>
+  </requirements>
+
 This will work on the main Tool Shed or the Test Tool Shed where
 it will refer to these packages:
 
@@ -62,6 +68,14 @@ as dependencies in your ``repository_dependencies.xml`` file, e.g.::
     <repository name="package_matplotlib_1_2" owner="iuc" />
     <repository name="package_scipy_0_12" owner="iuc" />
   </repositories>
+
+And in your tool XML file(s) you would include::
+
+  <requirements>
+    <requirement type="package" version="1.61">biopython</requirement>
+    <requirement type="package" version="1.2.1">matplotlib</requirement>
+    <requirement type="package" version="0.12.0">scipy</requirement>
+  </requirements>
 
 This will work on the main Tool Shed refering to these packages
 (and similarly on the Test Tool Shed):
