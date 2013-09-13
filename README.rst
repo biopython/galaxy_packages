@@ -85,7 +85,7 @@ This will work on the main Tool Shed refering to these packages
 * http://toolshed.g2.bx.psu.edu/view/iuc/package_scipy_0_12
 
 These additional dependencies are maintained by the IUC, or in full
-the "Intergalactic Utilities Commission" which is the tongue-in-check
+the "Intergalactic Utilities Commission" which is the tongue-in-cheek
 name of the Galaxy Tool Shed review team, see:
 http://wiki.galaxyproject.org/ReviewingToolShedRepositories
 
