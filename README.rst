@@ -35,20 +35,20 @@ dependency, e.g.::
 
   <?xml version="1.0"?>
   <repositories description="Requires Biopython as a dependency.">
-    <repository name="package_biopython_1_61" owner="biopython" />
+    <repository name="package_biopython_1_65" owner="biopython" />
   </repositories>
 
 Also, in your tool XML file(s) you must include::
 
   <requirements>
-    <requirement type="package" version="1.61">biopython</requirement>
+    <requirement type="package" version="1.65">biopython</requirement>
   </requirements>
 
 This will work on the main Tool Shed or the Test Tool Shed where
 it will refer to these packages:
 
-* http://toolshed.g2.bx.psu.edu/view/biopython/package_biopython_1_61
-* http://testtoolshed.g2.bx.psu.edu/view/biopython/package_biopython_1_61
+* http://toolshed.g2.bx.psu.edu/view/biopython/package_biopython_1_65
+* http://testtoolshed.g2.bx.psu.edu/view/biopython/package_biopython_1_65
 
 Since it is a compile time requirement, the Biopython package
 itself will depend on NumPy, so you do not need to also declare
@@ -64,7 +64,7 @@ as dependencies in your ``repository_dependencies.xml`` file, e.g.::
 
   <?xml version="1.0"?>
   <repositories description="Requires Biopython, MatPlotLib and SciPy.">
-    <repository name="package_biopython_1_61" owner="biopython" />
+    <repository name="package_biopython_1_65" owner="biopython" />
     <repository name="package_matplotlib_1_2" owner="iuc" />
     <repository name="package_scipy_0_12" owner="iuc" />
   </repositories>
@@ -72,17 +72,17 @@ as dependencies in your ``repository_dependencies.xml`` file, e.g.::
 And in your tool XML file(s) you would include::
 
   <requirements>
-    <requirement type="package" version="1.61">biopython</requirement>
-    <requirement type="package" version="1.2.1">matplotlib</requirement>
-    <requirement type="package" version="0.12.0">scipy</requirement>
+    <requirement type="package" version="1.65">biopython</requirement>
+    <requirement type="package" version="1.4">matplotlib</requirement>
+    <requirement type="package" version="0.14">scipy</requirement>
   </requirements>
 
 This will work on the main Tool Shed refering to these packages
 (and similarly on the Test Tool Shed):
 
-* http://toolshed.g2.bx.psu.edu/view/biopython/package_biopython_1_61
-* http://toolshed.g2.bx.psu.edu/view/iuc/package_matplotlib_1_2
-* http://toolshed.g2.bx.psu.edu/view/iuc/package_scipy_0_12
+* http://toolshed.g2.bx.psu.edu/view/biopython/package_biopython_1_65
+* http://toolshed.g2.bx.psu.edu/view/iuc/package_matplotlib_1_4
+* http://toolshed.g2.bx.psu.edu/view/iuc/package_scipy_0_14
 
 These additional dependencies are maintained by the IUC, or in full
 the "Intergalactic Utilities Commission" which is the tongue-in-cheek
@@ -95,6 +95,12 @@ from the IUC:
 
 * http://toolshed.g2.bx.psu.edu/view/iuc/
 * http://testtoolshed.g2.bx.psu.edu/view/iuc/
+
+In addition to the examples above, the following are of particular
+relevance:
+
+* https://testtoolshed.g2.bx.psu.edu/view/iuc/package_python_reportlab_3_1_44
+* https://testtoolshed.g2.bx.psu.edu/view/iuc/package_networkx_1_9
 
 For full details on how to define dependencies on the Galaxy Tool Shed,
 see http://wiki.galaxyproject.org/DefiningRepositoryDependencies
