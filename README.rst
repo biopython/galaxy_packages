@@ -13,7 +13,7 @@ and the Test Tool Shed http://testtoolshed.g2.bx.psu.edu
 In addition to new tools, the Galaxy Tool Shed also includes
 software package definitions for use as dependencies. This
 repository is for the development of the Biopython package
-defintions shared on the main Tool Shed and Test Tool Shed:
+definitions shared on the main Tool Shed and Test Tool Shed:
 
 * http://toolshed.g2.bx.psu.edu/view/biopython/
 * http://testtoolshed.g2.bx.psu.edu/view/biopython/
