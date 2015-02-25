@@ -66,7 +66,7 @@ as dependencies in your ``repository_dependencies.xml`` file, e.g.::
   <repositories description="Requires Biopython, MatPlotLib and SciPy.">
     <repository name="package_biopython_1_65" owner="biopython" />
     <repository name="package_matplotlib_1_2" owner="iuc" />
-    <repository name="package_scipy_0_12" owner="iuc" />
+    <repository name="package_scipy_0_14" owner="iuc" />
   </repositories>
 
 And in your tool XML file(s) you would include::
