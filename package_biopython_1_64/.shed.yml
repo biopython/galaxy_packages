@@ -1,0 +1,11 @@
+name: package_biopython_1_64
+owner: biopython
+homepage_url: http://biopython.org
+remote_repository_url: https://github.com/biopython/galaxy_packages/tree/master/package_biopython_1_64
+description: Downloads and compiles version 1.64 of the Biopython package.
+long_description: |
+  The Biopython Project is an international association of developers of freely available
+  Python tools for computational molecular biology.
+categories:
+- Tool Dependency Packages
+type: tool_dependency_definition
