@@ -1,0 +1,19 @@
+#Ignore backup files from some Unix editors,
+*~
+*.swp
+*.bak
+
+#Ignore any tar-balls prepared to upload to Galaxy Tool Shed
+*.tar.gz
+
+#Ignore patches and any original files created by patch command
+*.diff
+*.patch
+*.orig
+*.rej
+
+#Ignore these hidden files from Mac OS X
+.DS_Store
+
+#Ignore hidden files from Dolphin window manager
+.directory
