@@ -1,0 +1,36 @@
+# This is a special configuration file to run tests on Travis-CI via
+# GitHub notifications when changes are committed.
+#
+# This file is not intended for end users of the Galaxy packages
+#
+# For technical details, see http://travis-ci.org/ and this blog post
+# for semi-related background,
+# http://blastedbio.blogspot.com/2013/09/using-travis-ci-for-testing-galaxy-tools.html
+
+# We don't need sudo so can avoid slower legacy TravisCI infrastructure
+sudo: false
+
+# We need Python 2.6 or 2.7 to run Galaxy and planemo
+language: python
+python:
+ - "2.6"
+ - "2.7"
+
+before_install:
+ - export DOWNLOAD_CACHE=$PWD/downloads && mkdir -p $DOWNLOAD_CACHE
+ - export INSTALL_DIR=$PWD/tool_install && mkdir -p $INSTALL_DIR
+
+install:
+ - pip install planemo
+
+script:
+# See https://github.com/galaxyproject/planemo/issues/341
+# Using planemo lint to check for obvious tool errors
+# - planemo lint --report_level warn --fail_level error ${TRAVIS_BUILD_DIR}/package_*
+# planemo dependency_script to check for tool_dependencies.xml errors
+ - planemo dependency_script ${TRAVIS_BUILD_DIR}/package_*
+
+
+#The email defaults are quite talkative
+notifications:
+  email: false
