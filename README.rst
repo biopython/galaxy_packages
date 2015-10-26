@@ -30,7 +30,7 @@ Instructions for Galaxy Tool Authors
 If you are writing a Galaxy Tool which uses a Python script
 dependent on Biopython, in order for the Galaxy Tool Shed to
 automatically install Biopython you must include a
-``repository_dependencies.xml`` file declaring this as a
+``tool_dependencies.xml`` file declaring this as a
 dependency, e.g.::
 
   <?xml version="1.0"?>
@@ -50,7 +50,13 @@ it will refer to these packages:
 * http://toolshed.g2.bx.psu.edu/view/biopython/package_biopython_1_65
 * http://testtoolshed.g2.bx.psu.edu/view/biopython/package_biopython_1_65
 
-Since it is a compile time requirement, the Biopython package
+Here is an example declaring a dependency on Biopython this way:
+
+* https://github.com/peterjc/pico_galaxy/tree/master/tools/align_back_trans
+* http://toolshed.g2.bx.psu.edu/view/peterjc/align_back_trans
+* http://testtoolshed.g2.bx.psu.edu/view/peterjc/align_back_trans
+
+Note since it is a compile time requirement, the Biopython package
 itself will depend on NumPy, so you do not need to also declare
 that as an explicit dependency.
 
