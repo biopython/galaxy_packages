@@ -17,7 +17,7 @@ The PYTHONPATH for biopython can be accessed through PYTHONPATH_BIOPYTHON.
         </readme>
         <install version="1.0">
             <actions>
-                <action type="download_by_url">https://pypi.python.org/packages/source/b/biopython/biopython-1.63.tar.gz</action>
+                <action type="download_by_url" sha256sum="c3cd21e645ee1ecf1ec5cccf06da74cbadfc00b084e987c74b5a5aa25a1621b6">https://pypi.python.org/packages/source/b/biopython/biopython-1.63.tar.gz</action>
                 <action type="set_environment_for_install">
                     <repository name="package_numpy_1_7" owner="iuc">
                         <package name="numpy" version="1.7.1" />
