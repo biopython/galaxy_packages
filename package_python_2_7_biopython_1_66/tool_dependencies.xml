@@ -16,7 +16,7 @@
                         <repository name="package_numpy_1_9" owner="iuc">
                             <package name="numpy" version="1.9" />
                         </repository>
-                        <package md5sum="4a2d14b9ff6d4ef9d3813f948571d1790c9e8c90f1d56cbb9e2d22f750b5b7ea">https://github.com/biopython/biopython/archive/biopython-166.tar.gz</package>
+                        <package sha256sum="171ad726f50528b514f9777e6ea54138f6e35792c5b128c4ab91ce918a48bbbd">https://pypi.python.org/packages/source/b/biopython/biopython-1.66.tar.gz</package>
                     </action>
                 </actions>
             </install>
