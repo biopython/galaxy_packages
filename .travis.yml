@@ -10,10 +10,9 @@
 # We don't need sudo so can avoid slower legacy TravisCI infrastructure
 sudo: false
 
-# We need Python 2.6 or 2.7 to run Galaxy and planemo
+# We need Python 2.7 to run Galaxy and planemo
 language: python
 python:
- - "2.6"
  - "2.7"
 
 before_install:
