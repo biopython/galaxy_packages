@@ -24,7 +24,7 @@ install:
 
 script:
 # check for obvious issues in the package definitions
-- planemo shed_lint ${TRAVIS_BUILD_DIR}/package_*
+ - planemo shed_lint ${TRAVIS_BUILD_DIR}/package_*
 # planemo dependency_script to check for tool_dependencies.xml errors
 # currently cannot process this one:
  - rm -rf ${TRAVIS_BUILD_DIR}/package_python_2_7_biopython_1_66
