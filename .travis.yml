@@ -23,9 +23,8 @@ install:
  - pip install planemo
 
 script:
-# See https://github.com/galaxyproject/planemo/issues/341
-# Using planemo lint to check for obvious tool errors
-# - planemo lint --report_level warn --fail_level error ${TRAVIS_BUILD_DIR}/package_*
+# check for obvious issues in the package definitions
+- planemo shed_lint ${TRAVIS_BUILD_DIR}/package_*
 # planemo dependency_script to check for tool_dependencies.xml errors
 # currently cannot process this one:
  - rm -rf ${TRAVIS_BUILD_DIR}/package_python_2_7_biopython_1_66
