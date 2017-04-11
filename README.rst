@@ -1,5 +1,5 @@
-Biopython package definitions for the Galaxy Tool Shed
-======================================================
+Biopython package definitions for the Galaxy Tool Shed (OBSOLETE)
+=================================================================
 
 For an introduction to the Biopython Project, please see
 http://biopython.org - and for an introduction to the
@@ -10,9 +10,9 @@ new tools to a Galaxy instance. These tools are shared via
 a Galaxy Tool Shed, primarily http://toolshed.g2.bx.psu.edu
 and the Test Tool Shed http://testtoolshed.g2.bx.psu.edu
 
-In addition to new tools, the Galaxy Tool Shed also includes
+In addition to new tools, the Galaxy Tool Shed also included
 software package definitions for use as dependencies. This
-repository is for the development of the Biopython package
+repository was for the development of the Biopython package
 definitions shared on the main Tool Shed and Test Tool Shed:
 
 * http://toolshed.g2.bx.psu.edu/view/biopython/
@@ -23,6 +23,13 @@ named entry on the Tool Shed, so that tools using Biopython
 can specify the exact version of Biopython required. This is
 important for reproducibility which is a Galaxy design goal.
 
+However, since 2017 the Galaxy community has moved away from
+this home-grown dependency system and adopted Conda, and
+in particular the BioConda channel. This covers Biopython:
+
+- https://anaconda.org/bioconda/biopython
+- https://bioconda.github.io/recipes/biopython/README.html
+- https://github.com/bioconda/bioconda-recipes/tree/master/recipes/biopython
 
 Instructions for Galaxy Tool Authors
 ====================================
